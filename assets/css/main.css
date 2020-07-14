@@ -12,7 +12,7 @@ header {
   background: linear-gradient(180deg, #DCE9FF -3.6%, rgba(231, 240, 255, 0.0104167) 99.99%, rgba(220, 233, 255, 0) 100%);
   padding-top: 20px;
   width: 100%;
-  /* height: 0vh; */
+ 
 }
 
 header .hero, header .phone-hero {
@@ -124,13 +124,47 @@ main .about .num-box {
 }
 
 main .about h3 {
-  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
   line-height: 40px;
   color: #535353;
 }
 
+main .features {
+  padding: 25px 10px;
+  background-color: #FDFDFD;
+}
+
+main .features .feature-text h2 {
+  /* font-family: 'Volkhov', serif; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 40px;
+  text-align: left;
+  color: #1B2436;
+}
+
+main .features .feature-text p{
+  min-width: 250px;
+  /* max-width: 300px; */
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 30px;
+  color: #535353;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
 
 @media (min-width: 768px) {
+
+header .hero, header .phone-hero {
+  padding: 20px;
+  margin-top: 20px;
+}
+
 header .hero h1 {
   width: 100%;
   font-size: 45px;
@@ -192,10 +226,30 @@ main .about .num-box {
 }
 
 main .about h3 {
-  font-size: 20px;
+  font-size: 24px;
   line-height: 40px;
   color: #535353;
   margin-bottom: 25px;
+}
+
+main .features .feature-text h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 50px;
+  text-align: left;
+  color: #1B2436;
+  margin-top: 40px;
+}
+
+main .features .feature-text p{
+  width: 350px;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 40px;
+  color: #535353;
+  margin-bottom: 40px;
+  text-align: left;
 }
 }
 
@@ -213,5 +267,31 @@ main .about h3 {
 
   main .about p, main .features p {
     width: 687px;
+    margin-bottom: 70px;
   }
+
+  main .about h3 {
+    font-size: 24px;
+    line-height: 40px;
+    color: #535353;
+    margin-bottom: 60px;
+  }
+
+  
+main .features .feature-text h2 {
+ 
+  
+  color: #1B2436;
+  margin-top: 40px;
+}
+
+main .features .feature-text p{
+  width: 450px;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 40px;
+  color: #535353;
+  /* margin-bottom: 30px; */
+  text-align: left;
+}
 }
