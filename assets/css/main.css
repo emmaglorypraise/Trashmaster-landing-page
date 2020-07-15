@@ -10,9 +10,14 @@ body {
   font-style: normal;
   font-weight: normal;
   cursor: pointer;
+  text-align: center;
 }
 
 /* MOBILE VIEW */
+.sm-hide {
+  display: none;
+}
+
 header {
   /* background-image: linear-gradient(#e6efff, #f6f9ff, #ffffff); */
   background: linear-gradient(180deg, #DCE9FF -3.6%, rgba(231, 240, 255, 0.0104167) 99.99%, rgba(220, 233, 255, 0) 100%);
@@ -35,16 +40,17 @@ header .hero h1 {
   font-family: 'Volkhov', serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 25px;
-  line-height: 45px;
+  font-size: 20px;
+  line-height: 30px;
   color: #1B2436;
+
 }
 
 header .hero p {
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 32px;
+  font-size: 14px;
+  line-height: 24px;
   color: #535353;
 }
 
@@ -54,31 +60,35 @@ header .hero form {
 
 header .hero form input {
   padding: 10px;
-  border: 1px solid #535353;
+  border: 1px solid #C4C4C4;
   box-sizing: border-box;
   border-radius: 30px;
-  width: 130px;
+  width: 250px;
   height: 40px;
 
+  text-align: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 50px;
+  font-size: 14px;
+  line-height: 80px;
   color: #999999;
   outline: none;
 }
 
 header .hero form button {
-  width: 80px;
+  width: 250px;
+  height: 40px;
   border: none;
   background: #7857E9;
   box-shadow: 0px 5px 25px rgba(120, 87, 233, 0.5);
   border-radius: 30px;
+  margin-top: 10px;
 
+  text-align: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 40px;
+  font-size: 14px;
+  /* line-height: 80px; */
   color: #FFFFFF;
   outline: none;
 }
@@ -86,10 +96,6 @@ header .hero form button {
 header .hero form input:focus, main .hero form input:active {
   border: 1px solid #7857E9;
 }
-
-/* header .hero form button:hover{
-
-} */
 
 main {
   margin-top: 70px;
@@ -108,8 +114,8 @@ main .about h1, main .features h1 {
   font-family: 'Volkhov', serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 22px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 45px;
   text-align: center;
   color: #1B2436;
 }
@@ -117,8 +123,8 @@ main .about h1, main .features h1 {
 main .about p, main .features p {
   width: 300px;
   margin: 0 auto;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 24px;
   text-align: center;
   color: #535353;
   margin-bottom: 40px;
@@ -129,6 +135,7 @@ main .about .details-box {
 }
 
 main .about .num-box {
+  width: 50px;
   padding: 10px;
   background: #FFFFFF;
   box-shadow: 0px 4px 10px rgba(153, 153, 153, 0.25);
@@ -137,17 +144,19 @@ main .about .num-box {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 40px;
   text-align: center;
   color: #7857E9;
+  margin: 0 auto;
 }
 
 main .about h3 {
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 40px;
+  font-size: 14px;
+  line-height: 24px;
   color: #535353;
+  margin-top: 10px;
 }
 
 main .features {
@@ -162,29 +171,30 @@ main .features .feature-image img {
 
 main .features .feature-text h2 {
   /* font-family: 'Volkhov', serif; */
+  /* width: 291px; */
   font-style: normal;
   font-weight: normal;
-  font-size: 22px;
-  line-height: 40px;
-  text-align: left;
+  font-size: 18px;
+  line-height: 50px;
+  text-align: center;
   color: #1B2436;
 }
 
 main .features .feature-text p{
-  width: 250px;
+  width: 280px;
   /* max-width: 300px; */
   margin: 0 auto;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 24px;
   color: #535353;
   margin-bottom: 40px;
-  text-align: left;
+  text-align: center;
 }
 
 main .banner {
    background-color: #FFFFFF;
    margin: 0 auto;
-   padding: 10px;
+   padding: 0;
 }
 
 main .banner .banner-box {
@@ -193,23 +203,24 @@ main .banner .banner-box {
   background-color: #DCE9FF;
   box-shadow: 0px 4px 5px rgba(153, 153, 153, 0.25);
   border-radius: 0px 50px;
-  text-align: left;
+  text-align: center;
   
 }
 
 main .banner .banner-box .text1 {
+  font-family: 'Volkhov', serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 22px;
-  line-height: 40px;
+  font-size: 18px;
+  line-height: 34px;
   color: #343434;
 }
 
 main .banner .banner-box .text2 {
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 45px;
+  font-size: 14px;
+  line-height: 24px;
   color: #000000;
 }
 
@@ -224,10 +235,10 @@ main .banner .banner-box form input {
   box-sizing: border-box;
   border-radius: 30px;
 
-  width: 120px;
+  width: 250px;
   font-style: normal;
   font-weight: normal;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 40px;
   color: #999999;
   text-align: center;
@@ -244,10 +255,11 @@ main .banner .banner-box form button{
   border-radius: 30px;
   border: none;
 
-  width: 70px;
+  margin-top: 10px;
+  width: 250px;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 40px;
   color: #FFFFFF;
   text-align: center;
@@ -257,15 +269,21 @@ main .banner .banner-box form button{
 footer {
   background: #1B2436;
   color: #FFFFFF;
-  padding-top: 20px;
+  padding: 20px;
+}
+
+footer img {
+  margin: 0 auto;
+  width: 134px;
 }
 
 footer h3 {
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 42px;
+  font-size: 12px;
+  line-height: 20px;
   color: #FFFFFF;
+  text-align: center;
 }
 
 footer h3 a {
@@ -281,6 +299,14 @@ footer h3 a:hover {
 
 /* TABLET VIEW  */
 @media (min-width: 768px) {
+.sm-show {
+  display: none;
+}  
+
+.sm-hide {
+  display: flex;
+  width: 10px;
+}
 header .hero, header .phone-hero {
   padding: 20px;
   margin-top: 20px;
