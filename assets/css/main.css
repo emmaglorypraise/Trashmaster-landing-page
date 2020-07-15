@@ -7,6 +7,7 @@ body {
   font-weight: normal;
 }
 
+/* MOBILE VIEW */
 header {
   /* background-image: linear-gradient(#e6efff, #f6f9ff, #ffffff); */
   background: linear-gradient(180deg, #DCE9FF -3.6%, rgba(231, 240, 255, 0.0104167) 99.99%, rgba(220, 233, 255, 0) 100%);
@@ -157,9 +158,73 @@ main .features .feature-text p{
   text-align: left;
 }
 
+main .banner {
+   background-color: #FFFFFF;
+   margin: 0 auto;
+   padding: 30px;
+}
 
+main .banner .banner-box {
+  padding: 30px;
+  background-color: #DCE9FF;
+  box-shadow: 0px 4px 5px rgba(153, 153, 153, 0.25);
+  border-radius: 0px 50px;
+  text-align: left;
+  
+}
+
+main .banner .banner-box .text1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 40px;
+  color: #343434;
+}
+
+main .banner .banner-box .text2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 45px;
+  color: #000000;
+}
+
+main .banner .banner-box form input {
+  background: #FFFFFF;
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 30px;
+
+  width: 130px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 40px;
+  color: #999999;
+  text-align: center;
+  
+}
+
+main .banner .banner-box form button{
+  background: #7857E9;
+  box-shadow: 0px 4px 20px rgba(120, 87, 233, 0.5);
+  border-radius: 30px;
+  border: none;
+
+  width: 80px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 40px;
+  color: #FFFFFF;
+  text-align: center;
+  
+}
+
+
+
+/* TABLET VIEW  */
 @media (min-width: 768px) {
-
 header .hero, header .phone-hero {
   padding: 20px;
   margin-top: 20px;
@@ -243,7 +308,7 @@ main .features .feature-text h2 {
 }
 
 main .features .feature-text p{
-  width: 350px;
+  width: 300px;
   margin: 0 auto;
   font-size: 24px;
   line-height: 40px;
@@ -251,8 +316,33 @@ main .features .feature-text p{
   margin-bottom: 40px;
   text-align: left;
 }
+
+main .banner .banner-box .text1 {
+  font-size: 32px;
 }
 
+main .banner .banner-box .text2 {
+  font-size: 24px;
+}
+
+main .banner .banner-box {
+  padding-top: 50px;
+}
+
+main .banner .banner-box form input {
+  width: 190px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+main .banner .banner-box form button{
+  width: 80px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+}
+
+/* LAPTOP/DESKTOP VIEW */
 @media (min-width: 1024px) {
   header .hero form input {
     width: 220px;
@@ -276,17 +366,20 @@ main .features .feature-text p{
     color: #535353;
     margin-bottom: 60px;
   }
-
+  
+main .features {
+    padding: 25px 15px;
+    width: 900;
+    /* margin: 0 auto; */
+}
   
 main .features .feature-text h2 {
- 
-  
   color: #1B2436;
   margin-top: 40px;
 }
 
 main .features .feature-text p{
-  width: 450px;
+  width: 400px;
   margin: 0 auto;
   font-size: 24px;
   line-height: 40px;
@@ -294,4 +387,19 @@ main .features .feature-text p{
   /* margin-bottom: 30px; */
   text-align: left;
 }
+
+main .banner .banner-box form input {
+  width: 230px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+main .banner .banner-box form button{
+  width: 100px;
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+
+
 }
