@@ -1,6 +1,10 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+    
+  overflow-x: hidden; 
   background-color: #FFFFFF;
   font-family: 'Futura Md BT';
   font-style: normal;
@@ -11,14 +15,14 @@ body {
 /* MOBILE VIEW */
 header {
   /* background-image: linear-gradient(#e6efff, #f6f9ff, #ffffff); */
-  /* background: linear-gradient(180deg, #DCE9FF -3.6%, rgba(231, 240, 255, 0.0104167) 99.99%, rgba(220, 233, 255, 0) 100%); */
-  background-image: url('../images/hero-png\ \(2\).png');
+  background: linear-gradient(180deg, #DCE9FF -3.6%, rgba(231, 240, 255, 0.0104167) 99.99%, rgba(220, 233, 255, 0) 100%);
+  /* background-image: url('../images/hero-png\ \(2\).png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: fill;
+  background-position: center; */
   padding-top: 20px;
   /* width: 100%; */
-  /* height: 100vh; */
+  /* height: 80vh; */
  
 }
 
@@ -27,11 +31,11 @@ header .hero, header .phone-hero {
 }
 
 header .hero h1 {
-  padding-top: 20px;
+  padding-top: 10px;
   font-family: 'Volkhov', serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 25px;
   line-height: 45px;
   color: #1B2436;
 }
@@ -39,7 +43,7 @@ header .hero h1 {
 header .hero p {
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 32px;
   color: #535353;
 }
@@ -49,16 +53,16 @@ header .hero form {
 }
 
 header .hero form input {
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #535353;
   box-sizing: border-box;
   border-radius: 30px;
-  width: 160px;
+  width: 130px;
   height: 40px;
 
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 50px;
   color: #999999;
   outline: none;
@@ -89,7 +93,7 @@ header .hero form input:focus, main .hero form input:active {
 
 main {
   margin-top: 70px;
-  padding: 10px;
+  padding: 0;
   margin: 0 auto;
 }
 
@@ -121,7 +125,7 @@ main .about p, main .features p {
 }
 
 main .about .details-box {
-  width: 500px;
+  max-width: 500px;
 }
 
 main .about .num-box {
@@ -141,7 +145,7 @@ main .about .num-box {
 main .about h3 {
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 40px;
   color: #535353;
 }
@@ -149,6 +153,11 @@ main .about h3 {
 main .features {
   padding: 25px 10px;
   background-color: #FDFDFD;
+}
+
+main .features .feature-image img {
+  width: 250px;
+  /* height: 100vh; */
 }
 
 main .features .feature-text h2 {
@@ -163,7 +172,7 @@ main .features .feature-text h2 {
 
 main .features .feature-text p{
   width: 250px;
-  max-width: 300px;
+  /* max-width: 300px; */
   margin: 0 auto;
   font-size: 18px;
   line-height: 30px;
@@ -175,11 +184,12 @@ main .features .feature-text p{
 main .banner {
    background-color: #FFFFFF;
    margin: 0 auto;
-   padding: 30px;
+   padding: 10px;
 }
 
 main .banner .banner-box {
   padding: 30px;
+  margin-bottom: 30px;
   background-color: #DCE9FF;
   box-shadow: 0px 4px 5px rgba(153, 153, 153, 0.25);
   border-radius: 0px 50px;
@@ -204,7 +214,7 @@ main .banner .banner-box .text2 {
 }
 
 main .banner .banner-box form {
-  width: 300px;
+  width: 250px;
   margin: 0 auto;
 }
 
@@ -217,7 +227,7 @@ main .banner .banner-box form input {
   width: 120px;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 40px;
   color: #999999;
   text-align: center;
@@ -320,6 +330,19 @@ main .about p, main .features p {
   color: #535353;
   margin-bottom: 40px;
 }
+
+main .features p {
+  width: 437px;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  color: #535353;
+  margin-bottom: 40px;
+}
+
 main {
   margin-top: 40px;
 }
@@ -343,6 +366,11 @@ main .about h3 {
   margin-bottom: 25px;
 }
 
+main .features .feature-image img {
+  width: 100%;
+  height: 100%;
+}
+
 main .features .feature-text h2 {
   font-style: normal;
   font-weight: normal;
@@ -354,13 +382,22 @@ main .features .feature-text h2 {
 }
 
 main .features .feature-text p{
-  width: 400px;
+  width: 350px;
   margin: 0 auto;
   font-size: 24px;
   line-height: 40px;
   color: #535353;
   margin-bottom: 40px;
   text-align: left;
+}
+
+main .banner  {
+  padding-top: 40px;
+  margin-bottom: 30px;
+}
+main .banner .banner-box  {
+  padding: 20px;
+  margin: 0 20px;
 }
 
 main .banner .banner-box .text1 {
@@ -437,6 +474,12 @@ main .features .feature-text p{
   color: #535353;
   /* margin-bottom: 30px; */
   text-align: left;
+}
+
+main .banner .banner-box {
+  padding: 50px;
+  margin-bottom: 60px;
+
 }
 
 main .banner .banner-box form input {
