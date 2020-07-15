@@ -148,7 +148,7 @@ main .features .feature-text h2 {
 }
 
 main .features .feature-text p{
-  min-width: 250px;
+  width: 250px;
   /* max-width: 300px; */
   margin: 0 auto;
   font-size: 18px;
@@ -189,13 +189,18 @@ main .banner .banner-box .text2 {
   color: #000000;
 }
 
+main .banner .banner-box form {
+  width: 300px;
+  margin: 0 auto;
+}
+
 main .banner .banner-box form input {
   background: #FFFFFF;
   border: 1px solid #C4C4C4;
   box-sizing: border-box;
   border-radius: 30px;
 
-  width: 130px;
+  width: 120px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -211,14 +216,36 @@ main .banner .banner-box form button{
   border-radius: 30px;
   border: none;
 
-  width: 80px;
+  width: 70px;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 40px;
   color: #FFFFFF;
   text-align: center;
-  
+}
+
+footer {
+  background: #1B2436;
+  color: #FFFFFF;
+  padding-top: 20px;
+}
+
+footer h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 42px;
+  color: #FFFFFF;
+}
+
+footer h3 a {
+  color: #FFFFFF;
+  font-style: italic;
+}
+
+footer h3 a:hover {
+  color: #FFFFFF;
 }
 
 
