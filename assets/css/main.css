@@ -5,14 +5,20 @@ body {
   font-family: 'Futura Md BT';
   font-style: normal;
   font-weight: normal;
+  cursor: pointer;
 }
 
 /* MOBILE VIEW */
 header {
   /* background-image: linear-gradient(#e6efff, #f6f9ff, #ffffff); */
-  background: linear-gradient(180deg, #DCE9FF -3.6%, rgba(231, 240, 255, 0.0104167) 99.99%, rgba(220, 233, 255, 0) 100%);
+  /* background: linear-gradient(180deg, #DCE9FF -3.6%, rgba(231, 240, 255, 0.0104167) 99.99%, rgba(220, 233, 255, 0) 100%); */
+  background-image: url('../images/hero-png\ \(2\).png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fill;
   padding-top: 20px;
-  width: 100%;
+  /* width: 100%; */
+  /* height: 100vh; */
  
 }
 
@@ -55,7 +61,7 @@ header .hero form input {
   font-size: 14px;
   line-height: 50px;
   color: #999999;
-
+  outline: none;
 }
 
 header .hero form button {
@@ -70,8 +76,16 @@ header .hero form button {
   font-size: 16px;
   line-height: 40px;
   color: #FFFFFF;
-
+  outline: none;
 }
+
+header .hero form input:focus, main .hero form input:active {
+  border: 1px solid #7857E9;
+}
+
+/* header .hero form button:hover{
+
+} */
 
 main {
   margin-top: 70px;
@@ -149,7 +163,7 @@ main .features .feature-text h2 {
 
 main .features .feature-text p{
   width: 250px;
-  /* max-width: 300px; */
+  max-width: 300px;
   margin: 0 auto;
   font-size: 18px;
   line-height: 30px;
@@ -207,7 +221,11 @@ main .banner .banner-box form input {
   line-height: 40px;
   color: #999999;
   text-align: center;
-  
+  outline: none;
+}
+
+main .banner .banner-box form input:focus, main .banner .banner-box form input:active {
+  border: 1px solid #7857E9;
 }
 
 main .banner .banner-box form button{
@@ -223,6 +241,7 @@ main .banner .banner-box form button{
   line-height: 40px;
   color: #FFFFFF;
   text-align: center;
+  outline: none;
 }
 
 footer {
@@ -234,7 +253,7 @@ footer {
 footer h3 {
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 42px;
   color: #FFFFFF;
 }
@@ -291,7 +310,7 @@ main .about h1, main .features h1 {
 }
 
 main .about p, main .features p {
-  width: 537px;
+  width: 437px;
   margin: 0 auto;
   font-style: normal;
   font-weight: normal;
@@ -335,7 +354,7 @@ main .features .feature-text h2 {
 }
 
 main .features .feature-text p{
-  width: 300px;
+  width: 400px;
   margin: 0 auto;
   font-size: 24px;
   line-height: 40px;
@@ -354,6 +373,11 @@ main .banner .banner-box .text2 {
 
 main .banner .banner-box {
   padding-top: 50px;
+}
+
+main .banner .banner-box form {
+  width: auto;
+  /* margin: 0 auto; */
 }
 
 main .banner .banner-box form input {
