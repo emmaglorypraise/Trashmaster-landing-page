@@ -18,6 +18,10 @@ body {
   display: none;
 }
 
+.tick-icon {
+  display: none;
+}
+
 header {
   /* background-image: linear-gradient(#e6efff, #f6f9ff, #ffffff); */
   background: linear-gradient(180deg, #DCE9FF -3.6%, rgba(231, 240, 255, 0.0104167) 99.99%, rgba(220, 233, 255, 0) 100%);
@@ -63,7 +67,7 @@ header .hero form input {
   border: 1px solid #C4C4C4;
   box-sizing: border-box;
   border-radius: 30px;
-  width: 250px;
+  width: 100%;
   height: 40px;
 
   text-align: center;
@@ -76,7 +80,7 @@ header .hero form input {
 }
 
 header .hero form button {
-  width: 250px;
+  width: 100%;
   height: 40px;
   border: none;
   background: #7857E9;
@@ -157,6 +161,7 @@ main .about h3 {
   line-height: 24px;
   color: #535353;
   margin-top: 10px;
+  margin-bottom: 24px;
 }
 
 main .features {
@@ -224,10 +229,10 @@ main .banner .banner-box .text2 {
   color: #000000;
 }
 
-main .banner .banner-box form {
+/* main .banner .banner-box form {
   width: 250px;
   margin: 0 auto;
-}
+} */
 
 main .banner .banner-box form input {
   background: #FFFFFF;
@@ -235,7 +240,7 @@ main .banner .banner-box form input {
   box-sizing: border-box;
   border-radius: 30px;
 
-  width: 250px;
+  width: 100%;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -256,7 +261,7 @@ main .banner .banner-box form button{
   border: none;
 
   margin-top: 10px;
-  width: 250px;
+  width: 100%;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -304,9 +309,14 @@ footer h3 a:hover {
 }  
 
 .sm-hide {
-  display: flex;
-  width: 10px;
+  display: inline;
+  /* width: 10px; */
 }
+
+.tick-icon {
+  display: inline;
+}
+
 header .hero, header .phone-hero {
   padding: 20px;
   margin-top: 20px;
