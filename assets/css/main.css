@@ -12,7 +12,7 @@
 @font-face {
   font-family: 'Futura Md Bt';
   src: url('../fonts/futura-md-bt_481.ttf');
-  font-weight: normal;
+  font-weight: 500;
 }
 
 body {
@@ -45,10 +45,10 @@ header {
   /* background-image: url('../images/hero-png\ \(2\).png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; */
-  padding-top: 20px;
+  background-position: center center;
+  padding-top: 20px; */
   /* width: 100%; */
-  /* height: 80vh; */
+  /* height: 500px; */
  
 }
 
@@ -335,9 +335,14 @@ footer h3 a:hover {
   display: inline;
 }
 
+.navbar-brand img {
+  margin-top: 30px;
+}
+
 header .hero, header .phone-hero {
-  padding: 20px;
+  padding-left: 20px;
   margin-top: 10px;
+  vertical-align: text-bottom;
 }
 
 header .hero h1 {
@@ -346,11 +351,14 @@ header .hero h1 {
   line-height: 74px;
   color: #1B2436;
   text-align: left;
+  margin-bottom: 20px;
 }
 
 header .hero p {
+  max-width: 606px;
+  font-family: 'Futura Md Bt';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 30px;
   line-height: 53px;
   text-align: left;
@@ -361,9 +369,10 @@ header .hero form input {
   font-size: 20px;
   line-height: 80px;
   width: 70%;
+  height: 56px;
   text-align: left;
   margin: 0;
-  padding: 20px;
+  padding: 30px;
   position: absolute;
 }
 
@@ -371,23 +380,31 @@ header .hero form button {
   position: relative;
   padding: 0;
   font-size: 24px;
-  line-height: 40px;
-  top: -9px;
+  line-height: 50px;
+  top: -10px;
   width: 40%;
-  margin-left: 70%;
+  height: 65px;
+  margin-left: 60%;
   text-align: center;
 }
 
 header .phone-hero img{
-  margin-top: 40px;
+  margin-top: 90px;
+  /* background-position: right; */
+  /* margin-left: 200px; */
+  /* padding-left: 80px; */
 }
 
-main .about h1, main .features h1 {
+main .about hr {
+  margin-top: 50px;
+}
+
+main .about h1 {
   font-size: 36px;
   line-height: 50px;
 }
 
-main .about p, main .features p {
+main .about p {
   width: 437px;
   margin: 0 auto;
   font-style: normal;
@@ -417,14 +434,17 @@ main {
 
 main .about .details-box {
   width: 400px;
+  display: flex;
 }
 
 main .about .num-box {
+  width: 70px;
   padding: 15px;
   font-size: 20px;
   line-height: 20px;
   text-align: center;
   color: #7857E9;
+  margin-right: 20px;
 }
 
 main .about h3 {
@@ -432,11 +452,32 @@ main .about h3 {
   line-height: 40px;
   color: #535353;
   margin-bottom: 25px;
+  text-align: left;
+  /* width: 286px; */
 }
 
 main .features .feature-image img {
   width: 100%;
-  height: 100%;
+  /* padding-right: 10%; */
+  /* height: 100%; */
+}
+
+.main .features .feature-container {
+  margin: 0 auto;
+  width: 70%;
+  padding: 10px;
+}
+.main .features .feature-box {
+  margin-bottom: 20px;
+}
+
+main .features h1 {
+  font-size: 36px;
+  line-height: 55px;
+}
+
+main .features .feature-text {
+  min-width: 330px;
 }
 
 main .features .feature-text h2 {
@@ -450,12 +491,12 @@ main .features .feature-text h2 {
 }
 
 main .features .feature-text p{
-  width: 350px;
-  margin: 0 auto;
-  font-size: 24px;
-  line-height: 40px;
+  min-width: 320px;
+  margin: 0 35px;
+  font-size: 30px;
+  line-height: 45px;
   color: #535353;
-  margin-bottom: 40px;
+  /* margin-bottom: 20px; */
   text-align: left;
 }
 
@@ -490,6 +531,7 @@ main .banner .banner-box form {
     font-size: 20px;
     line-height: 30px;
     width: 80%;
+    height: 56px;
     text-align: left;
     margin: 0;
     padding: 20px;
@@ -499,11 +541,12 @@ main .banner .banner-box form {
   
   main .banner .banner-box form button {
     position: relative;
-    padding: 20px;
+    /* padding: 20px; */
     font-size: 24px;
     line-height: 30px;
-    top: -8px;
+    top: -9px;
     width: 30%;
+    height: 56px;
     margin-left: 65%;
     
     text-align: center;
@@ -547,6 +590,12 @@ main .banner .banner-box form {
     color: #535353;
     margin-bottom: 60px;
   }
+
+  main .features .feature-image img {
+    width: 80%;
+    padding-right: 20%;
+    /* height: 100%; */
+  }
   
 main .features {
     padding: 25px 15px;
@@ -559,8 +608,12 @@ main .features .feature-text h2 {
   margin-top: 40px;
 }
 
+main .features .feature-text {
+  min-width: 480px;
+}
+
 main .features .feature-text p{
-  width: 400px;
+  min-width: 400px;
   margin: 0 auto;
   font-size: 24px;
   line-height: 40px;
