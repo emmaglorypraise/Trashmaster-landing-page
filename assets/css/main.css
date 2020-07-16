@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'Futura Bk Bt';
+  src: url('../fonts/FuturaBookBT.ttf');
+} 
+
+@font-face {
+  font-family: 'Futura Md Bt';
+  src: url('../fonts/futura-md-bt_251.ttf');
+  font-weight: Bold;
+}
+
+@font-face {
+  font-family: 'Futura Md Bt';
+  src: url('../fonts/futura-md-bt_481.ttf');
+  font-weight: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +23,7 @@ body {
     
   overflow-x: hidden; 
   background-color: #FFFFFF;
-  font-family: 'Futura Md BT';
+  font-family: 'Futura Bk BT';
   font-style: normal;
   font-weight: normal;
   cursor: pointer;
@@ -51,6 +68,7 @@ header .hero h1 {
 }
 
 header .hero p {
+  font-family: 'Futura Mb Bt';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -175,7 +193,7 @@ main .features .feature-image img {
 }
 
 main .features .feature-text h2 {
-  /* font-family: 'Volkhov', serif; */
+  font-family: 'Futura Md Bt';
   /* width: 291px; */
   font-style: normal;
   font-weight: normal;
@@ -213,7 +231,7 @@ main .banner .banner-box {
 }
 
 main .banner .banner-box .text1 {
-  font-family: 'Volkhov', serif;
+  font-family: 'Futura Md Bt', ;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -319,31 +337,45 @@ footer h3 a:hover {
 
 header .hero, header .phone-hero {
   padding: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 header .hero h1 {
   width: 100%;
   font-size: 45px;
-  line-height: 65px;
+  line-height: 74px;
   color: #1B2436;
+  text-align: left;
 }
 
-.hero p {
+header .hero p {
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 42px;
+  font-size: 30px;
+  line-height: 53px;
+  text-align: left;
   color: #535353;
 }
  
 header .hero form input {
-  width: 180px;
+  font-size: 20px;
+  line-height: 80px;
+  width: 70%;
+  text-align: left;
+  margin: 0;
+  padding: 20px;
+  position: absolute;
 }
 
 header .hero form button {
-  width: 100px;
-  padding: 5px;
+  position: relative;
+  padding: 0;
+  font-size: 24px;
+  line-height: 40px;
+  top: -9px;
+  width: 40%;
+  margin-left: 70%;
+  text-align: center;
 }
 
 header .phone-hero img{
@@ -432,43 +464,68 @@ main .banner  {
   margin-bottom: 30px;
 }
 main .banner .banner-box  {
-  padding: 20px;
+  padding: 50px 0px 20px;
   margin: 0 20px;
+  text-align: left;
 }
 
 main .banner .banner-box .text1 {
   font-size: 32px;
+  line-height: 60px;
+  text-align: left;
 }
 
 main .banner .banner-box .text2 {
   font-size: 24px;
+  line-height: 45px;
+  text-align: left;
 }
-
-main .banner .banner-box {
-  padding-top: 50px;
-}
-
+/* 
 main .banner .banner-box form {
-  width: auto;
-  /* margin: 0 auto; */
-}
+  width: 100%;
+  margin: 0 auto;
+} */
 
-main .banner .banner-box form input {
-  width: 190px;
-  margin-top: 10px;
-  font-size: 16px;
-}
+  main .banner .banner-box form input {
+    font-size: 20px;
+    line-height: 30px;
+    width: 80%;
+    text-align: left;
+    margin: 0;
+    padding: 20px;
+    position: absolute;
+    
+  }
+  
+  main .banner .banner-box form button {
+    position: relative;
+    padding: 20px;
+    font-size: 24px;
+    line-height: 30px;
+    top: -8px;
+    width: 30%;
+    margin-left: 65%;
+    
+    text-align: center;
+  }
+  /* main .banner .banner-box form input {
+    width: 190px;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  main .banner .banner-box form button{
+    width: 80px;
+    margin-top: 10px;
+    font-size: 20px;
+  } */
+  
+} 
 
-main .banner .banner-box form button{
-  width: 80px;
-  margin-top: 10px;
-  font-size: 20px;
-}
-}
 
 /* LAPTOP/DESKTOP VIEW */
 @media (min-width: 1024px) {
-  header .hero form input {
+  /* header .hero form input {
     width: 220px;
     height: 50px;
     margin-right: 10px;
@@ -477,7 +534,7 @@ main .banner .banner-box form button{
   header .hero form button {
     width: 120px;
     padding: 5px;
-  }
+  } */
 
   main .about p, main .features p {
     width: 687px;
@@ -518,7 +575,7 @@ main .banner .banner-box {
 
 }
 
-main .banner .banner-box form input {
+/* main .banner .banner-box form input {
   width: 230px;
   margin-top: 10px;
   font-size: 20px;
@@ -528,7 +585,7 @@ main .banner .banner-box form button{
   width: 100px;
   margin-top: 10px;
   font-size: 22px;
-}
+} */
 
 
 
