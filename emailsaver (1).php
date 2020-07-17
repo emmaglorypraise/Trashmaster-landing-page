@@ -16,6 +16,19 @@
 
 <div class="container">
 
+<?php if(isset($_SESSION['success_message'])): ?>
+    <div class="alert alert-success alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+     <?php echo $_SESSION["success_message"];
+       // remove all session variables
+       session_unset();
+
+      // destroy the session
+      session_destroy();
+     ?>
+    </div> 
+<?php endif; ?>
+
 <form method="POST"  action="process.php" class="form-inline" style="margin-top:100px">
   <div class="form-group" >
     <label for="email">Email</label>

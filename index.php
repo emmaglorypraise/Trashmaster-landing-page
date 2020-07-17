@@ -24,6 +24,23 @@
   </head>
 
   <body>
+  
+  <?php 
+   require_once 'process.php';
+  ?>
+
+    <?php if(isset($_SESSION['success_message'])): ?>
+        <div class="alert alert-success alert-dismissible" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <?php echo $_SESSION["success_message"];
+          // remove all session variables
+          session_unset();
+
+          // destroy the session
+          session_destroy();
+        ?>
+        </div> 
+    <?php endif; ?>
     <!-- Landing Page -->
     <header>
       <div class="container">

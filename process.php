@@ -1,14 +1,6 @@
 <?php
 
-
-$update=false;
-$name="";
-$location="";
-$id="";
-
-$mysqli =new mysqli('127.0.0.1','root','','trashmaster') or die(mysqli_error($mysqli));
-  
-
+session_start();
 
 
 
@@ -16,7 +8,10 @@ if (isset($_POST['emailsaver'])){
 
     $email=$_POST['email'];
 
-    $mysqli->query("INSERT INTO data2 (email) VALUES ('$email')") or die ($mysqli->error);
+    $mysqli =new mysqli('127.0.0.1','root','','trashmaster') or die(mysqli_error($mysqli));
+    
+
+    $_SESSION["success_message"] = "you have subscribed sucessfully";
 
     header("location:index.php");
 
