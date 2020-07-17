@@ -14,5 +14,4 @@ if (isset($_POST['emailsaver'])){
     $_SESSION["success_message"] = "you have subscribed sucessfully";
 
     header("location:index.php");
-
 }
