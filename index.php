@@ -57,7 +57,7 @@
               <h1>Do you want to recover your lost file?</h1>
               <p>With trashmaster you will never get to lose a file on your mobile phone again. Enter your email below to get notified when we launch.</p>
               <form method="POST"  action="process.php">
-                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address required">
                 <button type="submit" name="emailsaver">Send</button>
               </form>
             </div>
@@ -288,7 +288,7 @@
                 <div class="col-md-6">
                   <h3 class="text2">We are currently working on trashmaster. Please input your email below for notification when lunched online.</h3>
                   <form method="POST"  action="process.php">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" required>
                     <button type="submit" name="emailsaver">Send</button>
                   </form>
                 </div>
